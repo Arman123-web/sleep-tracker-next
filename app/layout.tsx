@@ -4,7 +4,7 @@ import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Chatbot from '@/components/Chatbot'; // ✅ Import Chatbot component
+// import Chatbot from '@/components/Chatbot'; // ✅ Import Chatbot component
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -39,7 +39,7 @@ export default function RootLayout({
           <main className="min-h-screen">{children}</main>
 
           {/* Chatbot Floating Widget */}
-          <Chatbot /> {/* ✅ AI Assistant visible on every page */}
+          {/* <Chatbot /> ✅ AI Assistant visible on every page */}
 
           {/* Footer at bottom */}
           <Footer />
